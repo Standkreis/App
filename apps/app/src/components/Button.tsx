@@ -12,7 +12,7 @@ const Button = (props: Props) => {
   return (
     <button
       onClick={onClick}
-      className={`rounded-xl bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3 ${className}`}
+      className={`transition ease-in-out rounded-xl bg-primary-main px-4 py-2 text-white hover:bg-primary-dark sm:px-8 sm:py-3 ${className}`}
     >
       {children}
     </button>
