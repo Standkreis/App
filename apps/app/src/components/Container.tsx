@@ -8,7 +8,11 @@ type Props = {
 const Container = (props: Props) => {
   const { children, className = '' } = props
 
-  return <div className={`container mx-auto ${className}`}>{children}</div>
+  return (
+    <div className={`container px-4 md:mx-auto md:px-0 ${className}`}>
+      {children}
+    </div>
+  )
 }
 
 export default Container
