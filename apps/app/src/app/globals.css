@@ -50,13 +50,17 @@
   }
 
   .text-hint {
-    @apply text-gray-500;
+    @apply !text-gray-500;
   }
 
   /* T Y P O G R A P H Y */
+  body {
+    font-size: '20px';
+  }
   body * {
     font-family: '__Vollkorn_8ff8c3';
   }
+
   h1,
   h2,
   h3,
@@ -65,5 +69,64 @@
   h6,
   button {
     font-family: '__Berkshire_Swash_721f85';
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: '__Berkshire_Swash_721f85';
+    @apply text-gray-950;
+  }
+  .dark h1,
+  .dark h2,
+  .dark h3,
+  .dark h4,
+  .dark h5,
+  .dark h6 {
+    @apply text-white;
+  }
+
+  p {
+    font-size: 1.1rem;
+    @apply text-gray-700;
+  }
+  .dark p {
+    @apply text-gray-300;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.7rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 2.1rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+  button {
+    font-size: 1rem;
+  }
+  blockquote {
+    @apply text-gray-700;
+    font-size: 1rem;
+    font-style: italic;
+  }
+  .dark blockquote {
+    @apply text-gray-300;
   }
 }
