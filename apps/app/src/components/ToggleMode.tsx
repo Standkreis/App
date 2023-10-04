@@ -1,8 +1,10 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import { ReactNode, useEffect, useState } from 'react'
 import Button from './Button'
 import { useTheme } from 'next-themes'
+import Sun from './Icons/Sun'
+import Moon from './Icons/Moon'
 
 const ToggleMode = () => {
   const [mounted, setMounted] = useState(false)
@@ -21,8 +23,8 @@ const ToggleMode = () => {
   }
 
   return (
-    <Button className="my-6" onClick={onClick}>
-      ToggleMode
+    <Button className="text-primary" onClick={onClick}>
+      {theme === 'dark' ? <Sun /> : <Moon />}
     </Button>
   )
 }
