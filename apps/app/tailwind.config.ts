@@ -9,7 +9,6 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    typography: (theme: ThemeConfig) => ({}),
     fontFamily: {
       display: ['__Berkshire_Swash_721f85'],
       body: ['__Vollkorn_8ff8c3'],
