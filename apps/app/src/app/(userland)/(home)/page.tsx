@@ -3,17 +3,15 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="bg-gray-100 dark:bg-gray-900">
-      <h1 className="text-3xl font-bold text-black dark:text-white">
-        Standkreis
-      </h1>
-      <p className="text-black dark:text-white">
+    <div className="bg-default">
+      <h1 className="text-primary text-3xl font-bold">Standkreis</h1>
+      <p className="text-secondary">
         This is going to be the standkreis website
       </p>
 
       <ToggleMode />
 
-      <div className="mx-auto flex max-w-sm items-center space-x-4 rounded-xl bg-white p-6 shadow-lg dark:bg-gray-950">
+      <div className="bg-paper mx-auto flex max-w-sm items-center space-x-4 rounded-xl p-6 shadow-lg ">
         <div className="shrink-0">
           <Image
             className="h-12 w-12"
@@ -24,10 +22,8 @@ export default function Home() {
           />
         </div>
         <div>
-          <div className="text-xl font-medium text-black dark:text-white">
-            ChitChat
-          </div>
-          <p className="text-slate-500">You have a new message!</p>
+          <div className="text-primary text-xl font-medium">ChitChat</div>
+          <p className="text-hint">You have a new message!</p>
         </div>
       </div>
     </div>

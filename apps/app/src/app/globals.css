@@ -2,26 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer utilities {
+  /* S E M A N T I C   C O L O R S */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  /* B A C K G R O U N D */
+  .bg-paper {
+    @apply bg-white;
   }
-}
+  .dark .bg-paper {
+    @apply bg-gray-950;
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .bg-default {
+    @apply bg-gray-100;
+  }
+  .dark .bg-default {
+    @apply bg-gray-900;
+  }
+
+  .bg-light {
+    @apply bg-gray-200;
+  }
+  .dark .bg-light {
+    @apply bg-gray-800;
+  }
+
+  .bg-medium {
+    @apply bg-gray-300;
+  }
+  .dark .bg-medium {
+    @apply bg-gray-700;
+  }
+
+  /* T E X T */
+  .text-headline {
+    @apply text-gray-950;
+  }
+  .dark .text-headline {
+    @apply text-white;
+  }
+
+  .text-secondary {
+    @apply text-gray-700;
+  }
+  .dark .text-secondary {
+    @apply text-gray-300;
+  }
+
+  .text-hint {
+    @apply text-gray-500;
+  }
 }
