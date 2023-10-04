@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     userScalable: false,
     viewportFit: 'cover',
   },
-  themeColor: '#00CDA8',
+  themeColor: '#081416',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
     title: META.title,
     startupImage: {
-      url: 'images/apple_splash.png',
+      url: '/apple_splash.png',
     },
   },
   twitter: {
