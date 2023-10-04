@@ -20,7 +20,11 @@ const ToggleMode = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark')
   }
 
-  return <Button onClick={onClick}>ToggleMode</Button>
+  return (
+    <Button className="my-6" onClick={onClick}>
+      ToggleMode
+    </Button>
+  )
 }
 
 export default ToggleMode

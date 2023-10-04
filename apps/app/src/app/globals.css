@@ -92,6 +92,7 @@
   p {
     font-size: 1.1rem;
     @apply text-gray-700;
+    line-height: 1.5;
   }
   .dark p {
     @apply text-gray-300;
@@ -99,6 +100,7 @@
 
   h1 {
     font-size: 3rem;
+    line-height: 1.15;
   }
   h2 {
     font-size: 2.7rem;
@@ -122,9 +124,8 @@
     font-size: 1rem;
   }
   blockquote {
-    @apply text-gray-700;
+    @apply bg-paper my-4 rounded-md p-4 text-gray-700 shadow-inner;
     font-size: 1rem;
-    font-style: italic;
   }
   .dark blockquote {
     @apply text-gray-300;
