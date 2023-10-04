@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { Vollkorn, Berkshire_Swash } from 'next/font/google'
 import Providers from './Providers'
 
-const vollkorn = Vollkorn({ subsets: ['latin'] })
+const vollkorn = Vollkorn({ subsets: ['latin'], weight: ['400'] })
 const berkshire = Berkshire_Swash({ subsets: ['latin'], weight: ['400'] })
 
 export const metadata: Metadata = {
