@@ -1,8 +1,10 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Vollkorn, Berkshire_Swash } from 'next/font/google'
+import Providers from './Providers'
 
-const inter = Inter({ subsets: ['latin'] })
+const vollkorn = Vollkorn({ subsets: ['latin'], weight: ['400'] })
+const berkshire = Berkshire_Swash({ subsets: ['latin'], weight: ['400'] })
 
 export const metadata: Metadata = {
   title: 'Standkreis',
@@ -15,8 +17,10 @@ type Props = {
 
 export default function RootLayout({ children }: Props) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${vollkorn.className} ${berkshire.className}`}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }

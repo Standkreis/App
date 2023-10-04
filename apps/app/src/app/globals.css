@@ -2,26 +2,132 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer utilities {
+  /* S E M A N T I C   C O L O R S */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  /* B A C K G R O U N D */
+  .bg-paper {
+    @apply bg-white;
   }
-}
+  .dark .bg-paper {
+    @apply bg-gray-950;
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .bg-default {
+    @apply bg-gray-100;
+  }
+  .dark .bg-default {
+    @apply bg-gray-900;
+  }
+
+  .bg-light {
+    @apply bg-gray-200;
+  }
+  .dark .bg-light {
+    @apply bg-gray-800;
+  }
+
+  .bg-medium {
+    @apply bg-gray-300;
+  }
+  .dark .bg-medium {
+    @apply bg-gray-700;
+  }
+
+  /* T E X T */
+  .text-headline {
+    @apply text-gray-950;
+  }
+  .dark .text-headline {
+    @apply text-white;
+  }
+
+  .text-secondary {
+    @apply text-gray-700;
+  }
+  .dark .text-secondary {
+    @apply text-gray-300;
+  }
+
+  .text-hint {
+    @apply !text-gray-500;
+  }
+
+  /* T Y P O G R A P H Y */
+  body {
+    font-size: '20px';
+  }
+  body * {
+    font-family: '__Vollkorn_8ff8c3';
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button {
+    font-family: '__Berkshire_Swash_721f85';
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: '__Berkshire_Swash_721f85';
+    @apply text-gray-950;
+  }
+  .dark h1,
+  .dark h2,
+  .dark h3,
+  .dark h4,
+  .dark h5,
+  .dark h6 {
+    @apply text-white;
+  }
+
+  p {
+    font-size: 1.1rem;
+    @apply text-gray-700;
+    line-height: 1.5;
+  }
+  .dark p {
+    @apply text-gray-300;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1.15;
+  }
+  h2 {
+    font-size: 2.7rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 2.1rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+  button {
+    font-size: 1rem;
+  }
+  blockquote {
+    @apply bg-paper my-4 rounded-md p-4 text-gray-700 shadow-inner;
+    font-size: 1rem;
+  }
+  .dark blockquote {
+    @apply text-gray-300;
+  }
 }

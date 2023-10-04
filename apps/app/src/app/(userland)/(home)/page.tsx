@@ -1,27 +1,65 @@
-'use client'
-
-import React from 'react'
+import Container from '@/components/Container'
+import Page from '@/components/Page'
+import ToggleMode from '@/components/ToggleMode'
 
 export default function Home() {
-  let mode = localStorage.getItem('theme')
-  React.useEffect(() => {
-    mode = localStorage.getItem('theme')
-  }, [])
-  console.log(mode)
+  return (
+    <Page>
+      <Container className="max-w-4xl">
+        <h1>Standkreis</h1>
+        <p>
+          Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
+          Konsonantien leben die Blindtexte.
+        </p>
 
-  const toggleMode = () => {
-    if (mode === 'dark') {
-      console.log('mode', mode, 'should toggle to light')
-      localStorage.theme = 'light'
-      document.documentElement.classList.remove('dark')
-    }
+        <h2>Standkreis</h2>
+        <p>
+          Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
+          Konsonantien leben die Blindtexte.
+        </p>
 
-    if (mode === 'light') {
-      console.log('mode', mode, 'should toggle to dark')
-      localStorage.theme = 'dark'
-      document.documentElement.classList.add('dark')
-    }
-  }
+        <h3>Standkreis</h3>
+        <p>
+          Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
+          Konsonantien leben die Blindtexte.
+        </p>
 
-  return <button onClick={toggleMode}>Toggle Mode</button>
+        <h4>Standkreis</h4>
+        <p>
+          Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
+          Konsonantien leben die Blindtexte.
+        </p>
+
+        <h5>Standkreis</h5>
+        <p>
+          Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
+          Konsonantien leben die Blindtexte.
+        </p>
+
+        <h6>Standkreis</h6>
+        <p>
+          Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
+          Konsonantien leben die Blindtexte.
+        </p>
+
+        <blockquote>
+          Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in
+          den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion
+          werden die Blindtexte beherrscht – ein geradezu unorthographisches
+          Leben.
+        </blockquote>
+
+        <ToggleMode />
+
+        <div className="bg-paper mx-auto flex max-w-sm items-center space-x-4 rounded-xl p-6 shadow-lg ">
+          <div>
+            <h5>ChitChat</h5>
+            <p className="!text-hint font-weight-100">
+              You have a new message!
+            </p>
+          </div>
+        </div>
+      </Container>
+    </Page>
+  )
 }
