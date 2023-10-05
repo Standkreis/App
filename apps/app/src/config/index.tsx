@@ -35,8 +35,8 @@ export const config = {
         path: '/stories',
       },
       {
-        id: 'ecosystem',
-        label: 'Ecosystem',
+        id: 'species',
+        label: 'Species',
         icon: <Ecosystem />,
         path: '/ecosystem',
       },
