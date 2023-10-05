@@ -13,7 +13,7 @@ const Nav = () => {
     <>
       <div className="bg-paper sticky top-0 flex items-center justify-between p-4 shadow-sm">
         <Logo />
-        <div className="sm:display-block hidden">
+        <div className="hidden sm:block">
           <Menu />
         </div>
         {config.user.isLoggedIn ? (
