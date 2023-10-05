@@ -15,22 +15,19 @@ const Item = (props: Props) => {
   const pathname = usePathname()
 
   const active = pathname === path
+  console.log(path)
 
   return (
     <Link
       href={path}
-      className={`text-hint flex w-24 flex-col items-center gap-1 ${
-        active ? 'text-primary' : 'text-hint'
+      className={`flex w-24 flex-col items-center gap-1 rounded-lg border-none bg-slate-500 px-4 py-1 transition ease-in-out ${
+        active
+          ? '!bg-primary-main !text-headline hover:!text-headline'
+          : 'text-hint hover:!text-paragraph bg-transparent'
       }`}
     >
       {icon}
-      <span
-        className={`family-headline text-current-color text-sm ${
-          active ? 'text-primary' : 'text-hint'
-        }`}
-      >
-        {label}
-      </span>
+      <span className={`family-headline text-base !text-current`}>{label}</span>
     </Link>
   )
 }

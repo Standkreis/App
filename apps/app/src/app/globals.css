@@ -42,11 +42,15 @@
     @apply text-white;
   }
 
-  .text-secondary {
+  .text-paragraph {
     @apply text-gray-700;
   }
-  .dark .text-secondary {
+  .dark .text-paragraph {
     @apply text-gray-300;
+  }
+
+  .text-primary {
+    @apply !text-primary-main;
   }
 
   .text-hint {

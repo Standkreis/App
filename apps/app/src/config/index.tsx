@@ -38,7 +38,7 @@ export const config = {
         id: 'ecosystem',
         label: 'Ecosystem',
         icon: <Ecosystem />,
-        path: 'ecosystem/',
+        path: '/ecosystem',
       },
       {
         id: 'about',
