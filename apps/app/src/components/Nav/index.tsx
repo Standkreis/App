@@ -6,6 +6,7 @@ import ToggleMode from '../ToggleMode'
 import Button from '../Button'
 import Logo from '../Logo'
 import Menu from './Menu'
+import { UserButton } from '@clerk/nextjs'
 import UserMenu from './UserMenu'
 
 const Nav = () => {
@@ -16,14 +17,7 @@ const Nav = () => {
         <div className="hidden sm:block">
           <Menu />
         </div>
-        {config.user.isLoggedIn ? (
-          <UserMenu />
-        ) : (
-          <div className="flex items-center gap-6 ">
-            <ToggleMode />
-            <Button>Sign in</Button>
-          </div>
-        )}
+        <UserMenu />
       </div>
       <div className="bg-paper fixed bottom-0 w-screen p-2 sm:hidden">
         <Menu />
