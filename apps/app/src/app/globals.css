@@ -34,6 +34,19 @@
     @apply bg-gray-700;
   }
 
+  .bg-contrast {
+    @apply bg-gray-950;
+  }
+  .dark .bg-contrast {
+    @apply bg-white;
+  }
+  .bg-contrast-light {
+    @apply bg-gray-800;
+  }
+  .dark .bg-contrast-light {
+    @apply bg-gray-100;
+  }
+
   /* T E X T */
   .text-headline {
     @apply text-gray-950;
@@ -55,6 +68,19 @@
 
   .text-hint {
     @apply !text-gray-500;
+  }
+
+  .text-contrast {
+    @apply text-white;
+  }
+  .dark .text-contrast {
+    @apply text-gray-950;
+  }
+  .text-contrast-light {
+    @apply text-gray-800;
+  }
+  .dark .text-contrast-light {
+    @apply text-gray-100;
   }
 
   /* T Y P O G R A P H Y */

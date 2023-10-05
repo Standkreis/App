@@ -23,7 +23,7 @@ const ToggleMode = () => {
   }
 
   return (
-    <Button className="text-primary" onClick={onClick}>
+    <Button color="light" onClick={onClick}>
       {theme === 'dark' ? <Sun /> : <Moon />}
     </Button>
   )

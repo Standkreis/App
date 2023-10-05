@@ -22,7 +22,7 @@ const Item = (props: Props) => {
       href={path}
       className={`flex w-24 flex-col items-center gap-1 rounded-lg border-none bg-slate-500 px-4 py-1 transition ease-in-out ${
         active
-          ? '!bg-primary-main !text-headline hover:!text-headline'
+          ? '!bg-primary-main text-white hover:!text-white'
           : 'text-hint hover:!text-paragraph bg-transparent'
       }`}
     >
