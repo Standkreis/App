@@ -9,11 +9,11 @@ import Calendar from '@/components/Icons/Calendar'
 import Avatar from '@/components/Avatar'
 
 const StoryCard = (props: Story) => {
-  const { slug, title, description, image, publishedAt, creator, tags } = props
+  const { slug, title, description, image, date, creator, tags } = props
 
   return (
     <div className="card bg-paper basis-1/3 overflow-hidden rounded-lg shadow-sm transition ease-in-out hover:-translate-y-1">
-      <Link href={`/stories/${slug}`}>
+      <Link href={slug}>
         <div className="flex h-full flex-col">
           <div className="relative h-48 w-[100%] overflow-hidden">
             <Image
@@ -24,9 +24,9 @@ const StoryCard = (props: Story) => {
               className="image transition ease-in-out"
             />
             <div className="absolute bottom-2 left-2 flex gap-2">
-              {tags.map((tag) => (
+              {/* {tags.map((tag) => (
                 <Chip key={tag} label={tag} />
-              ))}
+              ))} */}
             </div>
           </div>
           <div className="items-between flex flex-grow flex-col justify-between p-4">
@@ -37,9 +37,9 @@ const StoryCard = (props: Story) => {
             <div className="mt-4 flex justify-between">
               <div className="text-hint flex items-center gap-1">
                 <Calendar />
-                <p className="text-hint">{publishedAt}</p>
+                <p className="text-hint">{date}</p>
               </div>
-              <Avatar image={creator.avatar} />
+              {/* <Avatar image={creator.avatar} /> */}
             </div>
           </div>
         </div>
