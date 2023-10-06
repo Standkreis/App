@@ -23,12 +23,6 @@ export const config = {
         path: '/',
       },
       {
-        id: 'shop',
-        label: 'Shop',
-        icon: <Shop />,
-        path: '/shop',
-      },
-      {
         id: 'stories',
         label: 'Stories',
         icon: <Stories />,
