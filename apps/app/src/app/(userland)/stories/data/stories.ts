@@ -23,7 +23,7 @@ export const STORIES: Story[] = [
     description:
       'Wir stellen unser erstes Permakultur Design Konzept vor, ein Einblick in unsere Gedankenwelt.',
     content: '<h1>Willkommen</h1><p>Lorem ipsum dolor sit amet.</p>',
-    image: '/images/garden-2.jpg',
+    image: '/images/stories/garden-2.jpg',
     publishedAt: '14.10.2023',
     tags: ['Garten'],
     creator: CREATORS.huhn,
@@ -35,7 +35,7 @@ export const STORIES: Story[] = [
     description:
       'Wir tauchen ein in eine für uns altbekannte und doch unbekannte Welt, der Wald.',
     content: '<h1>Willkommen</h1><p>Lorem ipsum dolor sit amet.</p>',
-    image: '/images/forest.jpg',
+    image: '/images/stories/forest.jpg',
     publishedAt: '14.10.2023',
     tags: ['Wald', 'Garten'],
     creator: CREATORS.sven,
@@ -47,7 +47,7 @@ export const STORIES: Story[] = [
     description:
       'Einblicke in zahlreiche Permakultur Projekte in verschiedenen Städten, was kann man überhaupt machen?',
     content: '<h1>Willkommen</h1><p>Lorem ipsum dolor sit amet.</p>',
-    image: '/images/city.jpg',
+    image: '/images/stories/city.jpg',
     publishedAt: '14.10.2023',
     tags: ['Stadt'],
     creator: CREATORS.sven,
@@ -58,7 +58,7 @@ export const STORIES: Story[] = [
   //   title: 'Mobile Hühner, warum und wies geht',
   //   description: 'Die Vor und Nachteile von einem mobilen Hühnerstall.',
   //   content: '<h1>Willkommen</h1><p>Lorem ipsum dolor sit amet.</p>',
-  //   image: '/images/chickens-2.jpg',
+  //   image: '/images/stories/chickens-2.jpg',
   //   publishedAt: '14.10.2023',
   //   tags: ['Tiere'],
   //   creator: CREATORS.huhn,
