@@ -1,9 +1,11 @@
 import Container from '@/components/Container'
 import Page from '@/components/Page'
+import ScrollToTop from '@/components/ScrollToTop'
 
 export default function About() {
   return (
     <Page>
+      <ScrollToTop />
       <Container className="max-w-4xl pt-8">
         <h1 className="mb-4">About</h1>
         <p>

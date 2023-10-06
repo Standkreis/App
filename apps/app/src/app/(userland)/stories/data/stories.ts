@@ -18,7 +18,7 @@ export type Story = {
 export const STORIES: Story[] = [
   {
     id: 1,
-    slug: '/unser-erstes-permakultur-design-konzept',
+    slug: 'unser-erstes-permakultur-design-konzept',
     title: 'Erstes Permakultur Design Konzept',
     description:
       'Wir stellen unser erstes Permakultur Design Konzept vor, ein Einblick in unsere Gedankenwelt.',
@@ -30,7 +30,7 @@ export const STORIES: Story[] = [
   },
   {
     id: 2,
-    slug: '/was-ist-nachhaltige-forstwirtschaft',
+    slug: 'was-ist-nachhaltige-forstwirtschaft',
     title: 'Was ist ein nachhaltiger Wald?',
     description:
       'Wir tauchen ein in eine für uns altbekannte und doch unbekannte Welt, der Wald.',
@@ -42,7 +42,7 @@ export const STORIES: Story[] = [
   },
   {
     id: 3,
-    slug: '/wie-geht-permakultur-in-der-stadt',
+    slug: 'wie-geht-permakultur-in-der-stadt',
     title: 'Wie geht Permakultur in der Stadt?',
     description:
       'Einblicke in zahlreiche Permakultur Projekte in verschiedenen Städten, was kann man überhaupt machen?',

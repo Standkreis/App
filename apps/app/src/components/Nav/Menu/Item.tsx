@@ -14,7 +14,9 @@ const Item = (props: Props) => {
   const { label, icon, path } = props
   const pathname = usePathname()
 
-  const active = pathname === path
+  const isHome = path === '/'
+  // Need exact check at home and include for other routes
+  const active = isHome ? pathname === '/' : pathname.includes(path)
 
   return (
     <Link

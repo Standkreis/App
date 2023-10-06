@@ -10,13 +10,12 @@ import Avatar from '@/components/Avatar'
 
 const StoryCard = (props: Story) => {
   const { slug, title, description, image, publishedAt, creator, tags } = props
-  console.log(creator)
 
   return (
     <div className="card bg-paper basis-1/3 overflow-hidden rounded-lg shadow-sm transition ease-in-out hover:-translate-y-1">
       <Link href={`/stories/${slug}`}>
         <div className="flex h-full flex-col">
-          <div className="relative h-44 w-[100%] overflow-hidden">
+          <div className="relative h-48 w-[100%] overflow-hidden">
             <Image
               src={image}
               alt={title}

@@ -3,10 +3,12 @@ import Hero from '@/components/Hero'
 import Page from '@/components/Page'
 import { STORIES } from '../stories/data/stories'
 import StoryCard from '../stories/components/Card'
+import ScrollToTop from '@/components/ScrollToTop'
 
 export default function Home() {
   return (
     <Page>
+      <ScrollToTop />
       <Hero />
       <Container className="max-w-5xl pb-6 pt-12">
         <h1 className="mb-4">🎯 Mission</h1>
