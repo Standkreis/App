@@ -4,7 +4,7 @@ import Page from '@/components/Page'
 export default function About() {
   return (
     <Page>
-      <Container className="max-w-4xl">
+      <Container className="max-w-4xl pt-8">
         <h1 className="mb-4">About</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean

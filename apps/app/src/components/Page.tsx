@@ -9,9 +9,7 @@ const Page = (props: Props) => {
   const { children, className } = props
 
   return (
-    <div className={`bg-default min-h-screen py-6 ${className}`}>
-      {children}
-    </div>
+    <div className={`bg-default min-h-screen ${className}`}>{children}</div>
   )
 }
 

@@ -1,16 +1,18 @@
 import Container from '@/components/Container'
+import Hero from '@/components/Hero'
 import Page from '@/components/Page'
 
 export default function Home() {
   return (
     <Page>
-      <Container className="max-w-4xl">
-        <h1 className="mb-4">Home</h1>
+      <Hero />
+      <Container className="max-w-4xl py-12">
+        <h1 className="mb-4">🎯 Mission</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-          felis, ultricies nec, pellentesque eu, pretium quis, sem.
+          Standkreis is an attempt to reshape our ecological, social and
+          economic systems towards a more sustainable future. Following the
+          principles of Permaculture we aspire to turn small pieces of dead land
+          into flourishing ecosystems for plants, animals and people.
         </p>
       </Container>
     </Page>

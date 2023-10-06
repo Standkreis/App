@@ -6,16 +6,16 @@ import UserMenu from './UserMenu'
 const Nav = () => {
   return (
     <>
-      <div className="bg-paper sticky top-0 flex items-center justify-between p-4 shadow-sm">
-        <Link href="">
+      <div className="bg-paper sticky top-0 z-10 flex w-[100%] items-center justify-between p-4 shadow-md">
+        <Link href="/">
           <Logo />
         </Link>
-        <div className="absolute left-[50%] hidden translate-x-[-50%] sm:block">
+        <div className="absolute left-[50%] hidden translate-x-[-50%] md:block">
           <Menu />
         </div>
         <UserMenu />
       </div>
-      <div className="bg-paper fixed bottom-0 w-screen p-2 sm:hidden">
+      <div className="bg-paper fixed bottom-0 w-screen overflow-hidden p-2 shadow-md md:hidden">
         <Menu />
       </div>
     </>
