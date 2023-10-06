@@ -1,7 +1,12 @@
+import ToggleMode from '@/components/ToggleMode'
 import React from 'react'
 
 const UserMenu = () => {
-  return <div>UserMenu</div>
+  return (
+    <div>
+      <ToggleMode />
+    </div>
+  )
 }
 
 export default UserMenu
