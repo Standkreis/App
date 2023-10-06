@@ -19,7 +19,7 @@ const Item = (props: Props) => {
   return (
     <Link
       href={path}
-      className={`flex w-screen flex-col items-center gap-1 rounded-lg border-none bg-slate-500 px-1 py-1 transition ease-in-out sm:w-24 sm:flex-grow-0 sm:px-4 ${
+      className={`flex w-screen flex-col items-center gap-1 rounded-lg border-none bg-slate-500 px-1 py-1 transition ease-in-out md:w-24 md:flex-grow-0 md:px-4 ${
         active
           ? '!bg-primary-main hover:!bg-primary-dark !text-white'
           : 'text-hint hover:!text-paragraph hover:bg-default bg-transparent hover:!text-white'
