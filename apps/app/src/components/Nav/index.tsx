@@ -6,7 +6,7 @@ import UserMenu from './UserMenu'
 const Nav = () => {
   return (
     <>
-      <div className="bg-paper sticky top-0 flex items-center justify-between p-4 shadow-sm">
+      <div className="bg-paper sticky top-0 z-10 flex items-center justify-between p-4 shadow-sm">
         <Link href="">
           <Logo />
         </Link>
