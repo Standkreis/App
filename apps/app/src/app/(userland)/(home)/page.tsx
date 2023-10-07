@@ -19,9 +19,9 @@ export default function Home() {
           into flourishing ecosystems for plants, animals and people.
         </p>
       </Container>
-      <Container className="max-w-5xl pb-12 pt-6">
+      <Container className="max-w-5xl pb-24 pt-6">
         <h1 className="mb-4">📢 Stories</h1>
-        <div className="mt-4 flex items-stretch gap-6">
+        <div className="mt-4 flex flex-wrap gap-6 md:flex-nowrap">
           {allStories.map((story: any) => (
             <StoryCard key={story.slug} {...story} />
           ))}

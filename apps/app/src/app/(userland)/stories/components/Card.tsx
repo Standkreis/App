@@ -7,12 +7,13 @@ import Link from 'next/link'
 import Chip from '@/components/Chip'
 import Calendar from '@/components/Icons/Calendar'
 import Avatar from '@/components/Avatar'
+import { formatDate } from '@/utils/formatDate'
 
-const StoryCard = (props: Story) => {
-  const { slug, title, description, image, date, creator, tags } = props
+const Card = (props: Story) => {
+  const { slug, title, description, image, date, creatorObject, tags } = props
 
   return (
-    <div className="card bg-paper basis-1/3 overflow-hidden rounded-lg shadow-sm transition ease-in-out hover:-translate-y-1">
+    <div className="card bg-paper basis-full overflow-hidden rounded-lg shadow-sm transition ease-in-out hover:-translate-y-1 md:basis-1/3">
       <Link href={slug}>
         <div className="flex h-full flex-col">
           <div className="relative h-48 w-[100%] overflow-hidden">
@@ -24,22 +25,22 @@ const StoryCard = (props: Story) => {
               className="image transition ease-in-out"
             />
             <div className="absolute bottom-2 left-2 flex gap-2">
-              {/* {tags.map((tag) => (
+              {tags.map((tag) => (
                 <Chip key={tag} label={tag} />
-              ))} */}
+              ))}
             </div>
           </div>
           <div className="items-between flex flex-grow flex-col justify-between p-4">
             <div>
-              <h6>{title}</h6>
+              <h6 className="mb-1">{title}</h6>
               <p>{description}</p>
             </div>
             <div className="mt-4 flex justify-between">
               <div className="text-hint flex items-center gap-1">
                 <Calendar />
-                <p className="text-hint">{date}</p>
+                <p className="text-hint">{formatDate(date)}</p>
               </div>
-              {/* <Avatar image={creator.avatar} /> */}
+              <Avatar image={creatorObject.avatar} />
             </div>
           </div>
         </div>
@@ -48,4 +49,4 @@ const StoryCard = (props: Story) => {
   )
 }
 
-export default StoryCard
+export default Card

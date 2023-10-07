@@ -5,6 +5,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import remarkGfm from 'remark-gfm'
 import rehypeCodeTitles from 'rehype-code-titles'
 import rehypePrism from 'rehype-prism-plus'
+import { getCreator } from './src/app/(userland)/stories/data/creators'
 
 /** @type {import('contentlayer/source-files').ComputedFields} */
 const computedFields = {
@@ -17,6 +18,10 @@ const computedFields = {
     resolve: (doc) => doc._raw.flattenedPath.split('/').slice(1).join('/'),
   },
   readingTime: { type: 'json', resolve: (doc) => readingTime(doc.body.raw) },
+  creatorObject: {
+    type: 'json',
+    resolve: (doc) => getCreator(doc.creator),
+  },
 }
 
 export const Story = defineDocumentType(() => ({
@@ -41,6 +46,14 @@ export const Story = defineDocumentType(() => ({
     },
     image: {
       type: 'string',
+      required: false,
+    },
+    creator: {
+      type: 'string',
+      required: false,
+    },
+    tags: {
+      type: 'json',
       required: false,
     },
   },

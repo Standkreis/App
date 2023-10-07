@@ -15,3 +15,13 @@ export const CREATORS: Record<CreatorKey, Creator> = {
     avatar: '/images/creators/huhn.png',
   },
 }
+
+type GetCreatorReturn = {
+  name: string
+  avatar: string
+}
+
+export const getCreator = (creator: CreatorKey): GetCreatorReturn => {
+  console.log(creator, CREATORS[creator])
+  return CREATORS[creator]
+}

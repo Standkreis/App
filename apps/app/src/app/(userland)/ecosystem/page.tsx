@@ -6,7 +6,7 @@ export default function Ecosystem() {
   return (
     <Page>
       <ScrollToTop />
-      <Container className="max-w-4xl  pt-8">
+      <Container className="max-w-4xl pb-24 pt-12">
         <h1 className="mb-4">Ecosystem</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
