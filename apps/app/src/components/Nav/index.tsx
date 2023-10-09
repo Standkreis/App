@@ -15,7 +15,7 @@ const Nav = () => {
         </div>
         <UserMenu />
       </div>
-      <div className="bg-paper fixed bottom-0 w-screen overflow-hidden p-2 shadow-md md:hidden">
+      <div className="bg-paper fixed bottom-0 z-10 w-screen overflow-hidden p-2 shadow-md md:hidden">
         <Menu />
       </div>
     </>

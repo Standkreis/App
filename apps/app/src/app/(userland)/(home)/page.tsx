@@ -1,9 +1,9 @@
 import Container from '@/components/Container'
 import Hero from '@/components/Hero'
 import Page from '@/components/Page'
-import { STORIES } from '../stories/data/stories'
 import StoryCard from '../stories/components/Card'
 import ScrollToTop from '@/components/ScrollToTop'
+import { allStories } from 'contentlayer/generated'
 
 export default function Home() {
   return (
@@ -19,11 +19,11 @@ export default function Home() {
           into flourishing ecosystems for plants, animals and people.
         </p>
       </Container>
-      <Container className="max-w-5xl pb-12 pt-6">
+      <Container className="max-w-5xl pb-24 pt-6">
         <h1 className="mb-4">📢 Stories</h1>
-        <div className="mt-4 flex items-stretch gap-6">
-          {STORIES.map((story) => (
-            <StoryCard key={story.id} {...story} />
+        <div className="mt-4 flex flex-wrap gap-6 md:flex-nowrap">
+          {allStories.map((story: any) => (
+            <StoryCard key={story.slug} {...story} />
           ))}
         </div>
       </Container>
