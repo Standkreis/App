@@ -1,3 +1,5 @@
+'use client'
+
 import Container from '@/components/Container'
 import Calendar from '@/components/Icons/Calendar'
 import Page from '@/components/Page'
