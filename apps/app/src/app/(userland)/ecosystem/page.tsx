@@ -1,19 +1,20 @@
+'use client'
+
 import Container from '@/components/Container'
 import Page from '@/components/Page'
 import ScrollToTop from '@/components/ScrollToTop'
+import potato from '@/data/ecosystem/plants/entities/0001_potato'
+import Hero from './components/Hero'
 
 export default function Ecosystem() {
+  const { name, content, media, tags } = potato
+
   return (
     <Page>
       <ScrollToTop />
-      <Container className="max-w-4xl  pt-8">
-        <h1 className="mb-4">Ecosystem</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-          felis, ultricies nec, pellentesque eu, pretium quis, sem.
-        </p>
+      <Hero tags={tags} media={media} name={name} />
+      <Container className="mt-8 max-w-3xl">
+        <p>{content}</p>
       </Container>
     </Page>
   )

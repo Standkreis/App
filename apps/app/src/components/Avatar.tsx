@@ -7,7 +7,7 @@ type Props = {
 
 const Avatar = (props: Props) => {
   const { image } = props
-  console.log('image', image)
+
   return (
     <Image
       src={image}

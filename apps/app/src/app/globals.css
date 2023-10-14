@@ -89,7 +89,7 @@
     font-size: '20px';
   }
   body * {
-    font-family: '__Vollkorn_8ff8c3';
+    font-family: '__Inter_2eaf22';
   }
 
   .family-headline {
@@ -111,7 +111,7 @@
   h4,
   h5,
   h6 {
-    font-family: '__Berkshire_Swash_721f85';
+    /* font-family: '__Berkshire_Swash_721f85'; */
     @apply text-gray-950;
   }
   .dark h1,

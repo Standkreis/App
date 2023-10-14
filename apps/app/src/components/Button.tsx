@@ -7,10 +7,17 @@ type Props = {
   onClick?: () => void
   className?: string
   color?: ButtonColor
+  opacity?: number
 }
 
 const Button = (props: Props) => {
-  const { children, onClick, className, color = 'primary' } = props
+  const {
+    children,
+    onClick,
+    className,
+    color = 'primary',
+    opacity = 100,
+  } = props
 
   const colors = {
     primary: {
@@ -38,7 +45,7 @@ const Button = (props: Props) => {
   return (
     <button
       onClick={onClick}
-      className={`rounded-xl p-3 transition ease-in-out ${colors[color].text} ${colors[color].bg} ${colors[color].bgHover} ${className}`}
+      className={`rounded-xl p-3 transition ease-in-out bg-opacity-${opacity} ${colors[color].text} ${colors[color].bg} ${colors[color].bgHover} ${className}`}
     >
       {children}
     </button>

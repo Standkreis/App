@@ -9,7 +9,9 @@ const Page = (props: Props) => {
   const { children, className } = props
 
   return (
-    <div className={`bg-default min-h-screen ${className}`}>{children}</div>
+    <div className={` bg-default min-h-screen px-4 xl:px-0 ${className}`}>
+      {children}
+    </div>
   )
 }
 
