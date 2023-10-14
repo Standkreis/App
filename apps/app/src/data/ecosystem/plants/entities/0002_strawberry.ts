@@ -1,5 +1,7 @@
 import { Plant } from '../types'
 
+const CONTENT = `Die Kartoffel ist eine einjährige krautige Pflanze und wird 40 - 70 cm hoch. Neben dem oberirdischen Kraut entwickeln sich unterirdische Ausläufer. Diese verdicken sich zu Knollen. Bei kultivierten Kartoffeln können je Pflanze im Durchschnitt 12 - 15 Kartoffelknollen geerntet werden.`
+
 const strawberry: Plant = {
   id: '2',
   name: {
@@ -24,6 +26,28 @@ const strawberry: Plant = {
   content:
     'Die Erdbeere ist eine ausdauernde Pflanze, die für ihre süßen, roten Früchte bekannt ist...',
   tags: ['Frucht', 'Beere', 'Sommer'],
+  sections: [
+    {
+      name: '📍 Standort',
+      content: CONTENT,
+      infos: [
+        {
+          key: 'Licht',
+          type: 'default',
+          chip: true,
+          value: '☀️☀️☀️',
+          hint: 'Sonnig',
+        },
+        {
+          key: 'Wasser',
+          type: 'default',
+          chip: true,
+          value: '☀️☀️☀️',
+          hint: 'Sonnig',
+        },
+      ],
+    },
+  ],
   location: {
     light: 'sun',
     water: 'fresh',
