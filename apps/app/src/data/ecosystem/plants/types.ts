@@ -37,18 +37,20 @@ type Score = {
 }
 
 type BaseInfo = {
-  key: string
+  label: string
   unit?: string
   hint?: string
 }
 
-interface Info extends BaseInfo {
+export type InfoType = 'default' | 'range' | 'color' | 'colorRange' | 'calendar'
+
+export interface Info extends BaseInfo {
   type: 'default'
   chip?: boolean
   value: string | number
 }
 
-interface RangeInfo extends BaseInfo {
+export interface RangeInfo extends BaseInfo {
   type: 'range'
   chip?: boolean
   range: {
@@ -70,10 +72,12 @@ interface ColorRangeInfo extends BaseInfo {
   }
 }
 
-interface Calendar extends BaseInfo {
+export interface CalendarInfo extends BaseInfo {
   type: 'calendar'
   months: Months[]
 }
+
+export type Infos = Info | RangeInfo | ColorInfo | ColorRangeInfo | CalendarInfo
 
 export type Plant = {
   id: string
@@ -94,7 +98,7 @@ export type Plant = {
   sections: {
     name: string
     content: string // MDX
-    infos: (Info | RangeInfo | ColorInfo | ColorRangeInfo | Calendar)[]
+    infos: Infos[]
   }[]
   location: {
     light: 'sun' | 'partial' | 'shade'

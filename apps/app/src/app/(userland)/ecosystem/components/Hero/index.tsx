@@ -59,7 +59,7 @@ const Hero = (props: Props) => {
 
   return (
     <>
-      <Container className="relative max-w-5xl pt-4">
+      <Container className="relative h-[420px] max-w-5xl pt-4">
         <div
           className={`${
             zoom && 'zoomed'

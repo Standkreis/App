@@ -30,22 +30,165 @@ const potato: Plant = {
   tags: ['Gemüse', 'Knolle', 'Grundnahrungsmittel'],
   sections: [
     {
+      name: '🎯 Kurz und Knapp',
+      content: CONTENT,
+      infos: [
+        {
+          label: 'Ordnung',
+          type: 'default',
+          value: 'Nachtschattenartige',
+          hint: 'Solanales',
+        },
+        {
+          label: 'Familie',
+          type: 'default',
+          value: 'Nachtschattengewächse',
+          hint: 'Solanaceae',
+        },
+        {
+          label: 'Gattung',
+          type: 'default',
+          value: 'Nachtschatten',
+          hint: 'Solanales',
+        },
+      ],
+    },
+    {
       name: '📍 Standort',
       content: CONTENT,
       infos: [
         {
-          key: 'Licht',
+          label: 'Licht',
           type: 'default',
           chip: true,
           value: '☀️☀️☀️',
           hint: 'Sonnig',
         },
         {
-          key: 'Wasser',
+          label: 'Wasser',
           type: 'default',
           chip: true,
-          value: '☀️☀️☀️',
-          hint: 'Sonnig',
+          value: '💧💧💧',
+          hint: 'Viel Wasser',
+        },
+        {
+          label: 'Boden',
+          type: 'default',
+          value: 'Lehmig bis sandig',
+        },
+        {
+          label: 'Nährstoffe',
+          type: 'default',
+          value: 'Nährstoffreich',
+        },
+        {
+          label: 'PH Wert',
+          type: 'range',
+          chip: true,
+          range: {
+            from: '5.2',
+            to: '6.4',
+          },
+        },
+        {
+          label: 'Frost',
+          type: 'default',
+          chip: true,
+          value: 'Frostempfindlich',
+        },
+        {
+          label: 'Klima',
+          type: 'default',
+          value: 'Gemäßigt',
+        },
+      ],
+    },
+    {
+      name: 'ℹ️ Infos',
+      content: CONTENT,
+      infos: [
+        {
+          label: 'Art',
+          type: 'default',
+          chip: true,
+          value: 'Staude',
+        },
+        {
+          label: 'Wurzelsystem',
+          type: 'default',
+          chip: true,
+          value: 'Knollenbildung',
+        },
+        {
+          label: 'Alter',
+          unit: 'Jahre',
+          type: 'default',
+          chip: true,
+          value: 'Einjährig',
+        },
+        {
+          label: 'Höhe',
+          unit: 'cm',
+          type: 'range',
+          chip: true,
+          range: {
+            from: 30,
+            to: 80,
+          },
+        },
+        {
+          label: 'Breite',
+          unit: 'cm',
+          type: 'range',
+          chip: true,
+          range: {
+            from: 25,
+            to: 40,
+          },
+        },
+        {
+          label: 'Schnitt',
+          chip: true,
+          type: 'default',
+          value: '✅ geeignet',
+        },
+        {
+          label: 'Frost',
+          chip: true,
+          type: 'default',
+          value: 'Empfindlich',
+          hint: 'Bis -12°C unproblematisch',
+        },
+      ],
+    },
+    {
+      name: '🌱 Aussaht',
+      content: CONTENT,
+      infos: [
+        {
+          label: 'Aussaht',
+          type: 'calendar',
+          months: ['march', 'april', 'may'],
+        },
+        {
+          label: 'Abstand',
+          unit: 'cm',
+          type: 'range',
+          chip: true,
+          range: {
+            from: 30,
+            to: 40,
+          },
+        },
+        {
+          label: 'Tiefe',
+          unit: 'cm',
+          type: 'range',
+          chip: true,
+          range: {
+            from: 10,
+            to: 15,
+          },
         },
       ],
     },

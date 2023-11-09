@@ -32,14 +32,14 @@ const raspberry: Plant = {
       content: CONTENT,
       infos: [
         {
-          key: 'Licht',
+          label: 'Licht',
           type: 'default',
           chip: true,
           value: '☀️☀️☀️',
           hint: 'Sonnig',
         },
         {
-          key: 'Wasser',
+          label: 'Wasser',
           type: 'default',
           chip: true,
           value: '☀️☀️☀️',
